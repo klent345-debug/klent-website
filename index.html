@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Klent J. Teves | Portfolio</title>
+  <meta name="description" content="Portfolio of Klent J. Teves: experience, trainings, seminars and projects.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600&family=Pinyon+Script&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="#home" aria-label="Home">KJT<small>Klent J. Teves</small></a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#learning">Trainings</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn btn-dark">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="wrap hero-stage">
+        <h1 class="hero-word" aria-label="Klent J. Teves, web developer">BUILDER</h1>
+        <img class="hero-photo" src="images/profile.svg" alt="Portrait of Klent J. Teves">
+        <p class="hero-script" aria-hidden="true">Web Developer</p>
+      </div>
+      <div class="wrap hero-foot">
+        <p class="typing">I am a <span id="typing"></span></p>
+        <a href="mailto:klent345@gmail.com">klent345@gmail.com</a>
+      </div>
+    </section>
+
+    <!-- ===== WHAT I DO ===== -->
+    <section class="dark band" id="skills">
+      <div class="wrap split">
+        <h2>What I do</h2>
+        <div>
+          <p>I design and build clear, fast websites and keep systems running. Here is where I spend most of my time.</p>
+          <a class="btn btn-light" href="#projects">See my projects</a>
+        </div>
+      </div>
+      <div class="wrap cards3">
+        <article class="card"><h3>Web Development</h3><p>HTML, CSS, JavaScript and responsive layouts.</p><img src="images/project-1.svg" alt="Web development sample"></article>
+        <article class="card"><h3>Technical Support</h3><p>Troubleshooting, setup and user training.</p><img src="images/project-2.svg" alt="Technical support sample"></article>
+        <article class="card"><h3>Data &amp; Reports</h3><p>Spreadsheets, dashboards and documentation.</p><img src="images/project-3.svg" alt="Data and reports sample"></article>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <h2>About me</h2>
+          <p>I'm <strong>Klent J. Teves</strong>, a developer based in Negros Oriental, Philippines. I turn ideas into working, easy-to-use websites and enjoy solving problems for real people.</p>
+          <p>I keep learning through trainings and seminars, and I like projects where I can improve something a little each week.</p>
+          <ul class="facts">
+            <li><b>Location</b> Bayawan City Negros Oriental, Philippines</li>
+            <li><b>Education</b> BS Information Technology</li>
+            <li><b>Languages</b> English, Filipino, Cebuano</li>
+            <li><b>Skills</b> HTML, CSS, JavaScript, Git, Excel</li>
+          </ul>
+          <a class="btn btn-dark" href="#contact">Hire me</a>
+        </div>
+        <img src="images/profile.svg" alt="Klent J. Teves smiling">
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section class="experience" id="experience">
+      <div class="wrap narrow">
+        <h2 class="center">Job experience</h2>
+        <p class="center sub">Where I have worked and what I did there.</p>
+        <!-- Copy one <article class="job"> block to add a job -->
+        <article class="job">
+          <div><h3>Web Developer</h3><p>Company Name, Scale AI <b>Full-time</b></p><p class="desc">Built and maintained company websites; cut page load time by half.</p></div>
+          <time>2023 – Present</time>
+        </article>
+        <article class="job">
+          <div><h3>IT Support Specialist</h3><p>Company Name, Remote <b>Contract</b></p><p class="desc">Resolved hardware and software tickets and trained new staff.</p></div>
+          <time>2021 – 2023</time>
+        </article>
+        <article class="job">
+          <div><h3>Freelance Designer</h3><p>Self-employed <b>Worldwide</b></p><p class="desc">Created landing pages and simple logos for small businesses.</p></div>
+          <time>2019 – 2021</time>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== TRAININGS & SEMINARS ===== -->
+    <section class="dark band" id="learning">
+      <div class="wrap narrow">
+        <h2>Trainings &amp; seminars</h2>
+        <div class="tabs" role="tablist">
+          <button class="tab active" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="training">Trainings</button>
+          <button class="tab" role="tab" aria-selected="false" data-filter="seminar">Seminars</button>
+        </div>
+        <!-- data-type must be "training" or "seminar" -->
+        <ul class="learn" id="learnList">
+          <li data-type="training"><time>Mar 2025</time><div><h3>Full-Stack Web Development Bootcamp</h3><p>Training Center Name, 40 hours</p></div></li>
+          <li data-type="seminar"><time>Nov 2024</time><div><h3>Cybersecurity Awareness Seminar</h3><p>Organization Name, Try hackme</p></div></li>
+          <li data-type="training"><time>Aug 2023</time><div><h3>TESDA Computer Systems Servicing NC II</h3><p>TESDA, Certificate earned</p></div></li>
+          <li data-type="seminar"><time>Feb 2023</time><div><h3>Digital Skills for the Future Workforce</h3><p>University Name, Webinar</p></div></li>
+          <li data-type="training"><time>Jun 2022</time><div><h3>Customer Service Excellence Workshop</h3><p>Company Name, 2 days</p></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects" id="projects">
+      <div class="wrap">
+        <h2>Selected projects</h2>
+        <div class="proj-grid">
+          <figure><img src="images/project-1.svg" alt="Project one"><figcaption><h3>Business Landing Page</h3><p>HTML, CSS, JavaScript</p></figcaption></figure>
+          <figure><img src="images/project-2.svg" alt="Project two"><figcaption><h3>Inventory Tracker</h3><p>JavaScript, Excel</p></figcaption></figure>
+          <figure><img src="images/project-3.svg" alt="Project three"><figcaption><h3>School Event Website</h3><p>HTML, CSS</p></figcaption></figure>
+          <figure><img src="images/project-4.svg" alt="Project four"><figcaption><h3>Personal Blog</h3><p>HTML, CSS, JavaScript</p></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIAL ===== -->
+    <section class="quote">
+      <div class="wrap narrow center">
+        <p class="sub">What people say</p>
+        <blockquote>Working with Klent was effortless. He understood what we needed and delivered on time.</blockquote>
+        <img class="avatar" src="images/avatar.svg" alt="">
+        <p class="sub">Maria Santos, Project Manager</p>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq">
+      <div class="wrap narrow">
+        <h2 class="center">Frequently asked questions</h2>
+        <div class="acc">
+          <div class="acc-item"><button class="acc-btn" aria-expanded="false">1. What services do you offer?<span>+</span></button><div class="acc-panel"><p>Website design and development, technical support and basic data reporting.</p></div></div>
+          <div class="acc-item"><button class="acc-btn" aria-expanded="false">2. Are you available for freelance work?<span>+</span></button><div class="acc-panel"><p>Yes. Send me a message with your project details and deadline.</p></div></div>
+          <div class="acc-item"><button class="acc-btn" aria-expanded="false">3. How long does a website take?<span>+</span></button><div class="acc-panel"><p>A simple site takes one to two weeks. Larger projects are scheduled after we talk.</p></div></div>
+          <div class="acc-item"><button class="acc-btn" aria-expanded="false">4. Which payment methods do you accept?<span>+</span></button><div class="acc-panel"><p>Bank transfer, GCash and PayPal.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="dark contact" id="contact">
+      <div class="wrap narrow center">
+        <h2 class="big">Let's work together</h2>
+        <form id="contactForm" novalidate>
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button class="btn btn-light" type="submit">Send message</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </div>
+      <div class="wrap foot">
+        <nav aria-label="Footer"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+        <nav aria-label="Social"><a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></nav>
+      </div>
+      <p class="copy">© <span id="year">2026</span> Klent J. Teves</p>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
